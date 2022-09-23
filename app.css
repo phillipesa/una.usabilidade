@@ -1,0 +1,26 @@
+h1{color: blue;}
+a{color: green;}
+
+.texto, #texto{
+    font-weight: bold;
+    color: rgb(10, 20, 30)
+}
+
+.texto{
+    font-size: 12;
+    color: red;    
+}
+
+#titulo{
+    font-size: 16;
+    color: yellow;
+    background-color: #F01;
+}
+
+#teste-borda{
+    background-color: #00ff00;
+    width: 200px;
+    height: 200px;
+    border: 3px dashed red;
+    border-radius: 50px;
+}

@@ -1,0 +1,11 @@
+.ex{
+    border: 1px solid green;
+    padding: 10px;
+    margin: 10px 5px;    
+    height: 100px;
+    background-color: black;
+}
+
+img {
+    width: 100%;
+}
