@@ -12,13 +12,73 @@
     
 
     <h2>Area de cadastro</h2>
-    <form action="" method="">
+    <form action="index.html" method="post">
+        <input type="text" name="nome"/>
+        <br/><br/><br/>
 
+        <input type="password" name="senha"/>
+        <br/><br/><br/>
+
+
+        <input type="date" name="senha"/>
+        <br/><br/><br/>
+
+
+        <input type="checkbox" name="aceite"/>
+        <br/><br/><br/>
+
+
+        <input type="color" name="cor"/>
+        <br/><br/><br/>
+
+        
+        <input type="radio" name="sexo"/>
+        <input type="radio" name="sexo"/>
+        <br/><br/><br/>
+
+
+        <input type="email" name="email"/>
+        <br/><br/><br/>
+
+
+        <select name="estado">
+            <option>MG</option>
+            <option>SP</option>
+            <option>RJ</option>
+        </select>
+        <br/><br/><br/>
+
+
+        <select name="dev[]" multiple>
+            <option>PHP</option>
+            <option>JAVA</option>
+            <option>.NET</option>
+        </select>
+        <br/><br/><br/>
+
+
+        <textarea name="descricao">
+
+        </textarea>
+        <br/><br/><br/>
+
+
+        <input type="submit"/>
     </form>
 
     <h2>Area de login</h2>
-    <form>
-        
+    <form action="index.html" method="get">
+        <label>
+            Usuário:<br/>
+            <input type="text" name="usuario"/>
+        </label>
+        <br/><br/>
+        <label>
+            Senha:<br/>
+            <input type="password" name="senha"/>
+        </label>
+        <br/><br/>
+        <button>Logar</button>
     </form>
 
 </body>
