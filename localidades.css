@@ -1,0 +1,19 @@
+table{
+    width: 600px;
+}
+
+table thead{
+    background-color: #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:hover{
+    background-color: #eee;
+}
+tbody tr:nth-child(odd){
+    background-color: #ddd;
+}
