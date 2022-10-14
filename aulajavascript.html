@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Aula de javascript</title>
+        <script type="text/javascript" src="app.js"></script>        
+    </head>
+    <body>
+        <button onclick="window.location.href='https://google.com'">Ir para google</button>
+        <button onclick="window.location.href=window.location.href">Atualizar a página</button>
+
+
+        <br/><br/><br/><br/>
+
+
+        <div id="area"></div>
+        <button onclick="document.getElementById('area').innerHTML = prompt('Informe um texto:'); 
+        this.innerHTML = 'alterado';">Mudar</button>
+
+
+        <button onclick="fazerAcao(this)">Mudar</button>
+
+        <br/><br/><br/><br/>
+
+        <button onclick="concatNomeSobrenome('Phillipe','Barcelos')">Concat</button>
+
+
+        <br/><br/><br/><br/>
+
+        <h1>Peças de PC</h1>
+        
+        <input type="text" id="itens"/>
+        <button onclick="adicionarItens();">Adicionar +</button>
+
+        <ul id="lista">
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+        </ul>
+
+
+
+        <br/><br/><br/><br/>
+
+        <h1>Operações</h1>
+        
+        <input type="text" id="valor1"/>
+        <input type="text" id="valor2"/>
+        <button onclick="soma();">Soma</button>
+      
+
+    </body>
+</html>
