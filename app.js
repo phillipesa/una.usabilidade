@@ -124,3 +124,23 @@ function loopsif(){
     }
 
 }
+
+
+function verificarSwitch(){
+    var valor = document.getElementById("valorSwitch");
+    console.log(valor.value);
+    switch (valor.value){
+        case "0":
+            valor.value = "valor foi zero";
+            break;
+        case "1":
+            valor.value = "valor foi um";
+            break;
+        case "2":
+            valor.value = "valor foi dois";
+            break;
+        default:
+            valor.value = "informe o valor";
+            break;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>    
+
+    <script>
+        function apertouMouse(){
+            console.log("Apertou o mouse");
+        }
+        function soltouMouse(){
+            console.log("Soltou o mouse");
+        }
+
+        function passarPorCima(){
+            console.log("Passou por cima");
+        }
+
+        function saiuDeCima(){
+            console.log("Saiu por cima");
+        }
+
+        function botaoDireitoMouse(){
+            console.log("Botaõ direito");
+        }
+
+        function apertouTecla(event){
+            if(event.shiftKey == true){
+                console.log("Apertou a tecla " + event.keyCode + " com o shift");
+            }else{
+                console.log("Apertou a tecla " + event.keyCode);
+            }
+            
+        }
+
+        function carregouPagina(){
+            console.log("Carregou a página");
+        }
+
+        function fechouPagina(){
+            console.log("Fechou a página");
+        }
+
+
+        function mudouOpcao(elemento){
+            console.log("Selecionou: "+elemento.value);
+        }
+
+        function focouOpcao(){
+            console.log("focou");
+        }
+
+        function desfocouOpcao(){
+            console.log("desfocou");
+        }
+
+    </script>
+
+</head>
+<body onload="carregouPagina()"
+        onunload="fechouPagina()">
+
+
+    <form method="post">
+        <input type="text" name="nome"/>
+        <br/><br/>
+        <select name="cidade" onchange="mudouOpcao(this)"
+                                onfocus="focouOpcao();"
+                                onblur="desfocouOpcao()">
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Minas Gerais</option>            
+        </select>
+        <br/><br/>
+        <input type="submit" value="enviar"/>
+    </form>
+    
+    <br/><br/><br/>
+
+    <button onmousedown="apertouMouse();"
+            onmouseup="soltouMouse();"
+            onmouseover="passarPorCima();"
+            onmouseout="saiuDeCima();"
+            oncontextmenu="botaoDireitoMouse();"
+    >Ações do mouse</button>
+
+    <br/><br/><br/>
+
+    <input type="text" onkeydown="apertouTecla(event)"/>
+</body>
+</html>
